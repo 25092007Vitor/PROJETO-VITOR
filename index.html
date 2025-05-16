@@ -5,81 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgroTech - Agricultura Moderna</title>
+    <meta name="description" content="AgroTech integra tecnologia e sustentabilidade para transformar a agricultura moderna. Descubra nossos serviços inovadores e saiba mais sobre apicultura.">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Cabeçalho -->
     <header class="header" id="header">
-        <nav class="nav-container">
-            <div class="logo">
+        <nav class="nav-container" aria-label="Menu principal">
+            <a href="#home" class="logo" aria-label="Página inicial AgroTech">
                 <img src="logo.png" alt="Logo AgroTech">
-            </div>
+            </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#apicultura">Apicultura</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            <div class="menu-toggle" aria-label="Menu">
+            <button class="menu-toggle" aria-label="Abrir menu de navegação">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </nav>
     </header>
 
     <!-- Seção Hero -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1 class="hero-title">Agricultura Sustentável</h1>
-            <p class="hero-subtitle">Tecnologia e natureza trabalhando juntas</p>
-            <button class="cta-button">Explore Nossos Serviços</button>
-        </div>
-        <div class="hero-scroll-indicator" aria-hidden="true"></div>
-    </section>
-
-    <!-- Seção de Serviços -->
-    <section class="services" id="servicos">
-        <div class="section-title">
-            <h2>Nossos Serviços</h2>
-        </div>
-        <div class="services-grid">
-            <!-- Exemplos de Cards de Serviços -->
-            <div class="service-card">
-                <h3>Consultoria Agrícola</h3>
-                <p>Oferecemos consultoria especializada para otimização de processos agrícolas.</p>
+    <main>
+        <section class="hero" id="home" aria-label="Introdução">
+            <div class="hero-content">
+                <h1 class="hero-title">Agricultura Sustentável</h1>
+                <p class="hero-subtitle">Tecnologia e natureza trabalhando juntas</p>
+                <a href="#servicos" class="cta-button">Explore Nossos Serviços</a>
             </div>
-            <div class="service-card">
-                <h3>Monitoramento de Culturas</h3>
-                <p>Utilizamos tecnologia para monitorar o crescimento e saúde das suas culturas.</p>
-            </div>
-            <div class="service-card">
-                <h3>Automação de Irrigação</h3>
-                <p>Soluções inteligentes para irrigação que economizam água e maximizam a produção.</p>
-            </div>
-        </div>
-    </section>
+            <div class="hero-scroll-indicator" aria-hidden="true"></div>
+        </section>
 
-    <!-- Seção Sobre -->
-    <section class="about" id="sobre">
-        <div class="section-title">
-            <h2>Sobre a AgroTech</h2>
-        </div>
-        <p>A AgroTech é uma empresa dedicada a integrar tecnologia com práticas agrícolas para melhorar a produtividade e sustentabilidade no campo.</p>
-    </section>
+        <!-- Seção de Serviços -->
+        <section class="services" id="servicos" aria-labelledby="titulo-servicos">
+            <header class="section-title">
+                <h2 id="titulo-servicos">Nossos Serviços</h2>
+            </header>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Consultoria Agrícola</h3>
+                    <p>Oferecemos consultoria especializada para otimização de processos agrícolas.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Monitoramento de Culturas</h3>
+                    <p>Utilizamos tecnologia para monitorar o crescimento e saúde das suas culturas.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Automação de Irrigação</h3>
+                    <p>Soluções inteligentes para irrigação que economizam água e maximizam a produção.</p>
+                </article>
+            </div>
+        </section>
 
-    <!-- Seção de Contato -->
-    <section class="contact" id="contato">
-        <div class="section-title">
-            <h2>Contato</h2>
-        </div>
-        <p>Entre em contato conosco para saber mais sobre nossos serviços e soluções.</p>
-    </section>
+        <!-- Nova Seção: Apicultura -->
+        <section class="apiculture" id="apicultura" aria-labelledby="titulo-apicultura">
+            <header class="section-title">
+                <h2 id="titulo-apicultura">Apicultura: O Valor das Abelhas na Agricultura</h2>
+            </header>
+            <div class="apiculture-content">
+                <img src="apicultura.jpg" alt="Apicultor trabalhando em colmeia" class="apiculture-image">
+                <div>
+                    <p>
+                        A <strong>apicultura</strong> é a prática de criar abelhas para a produção de mel, própolis, cera e outros produtos naturais. 
+                        Mais do que isso, as abelhas desempenham um papel fundamental na <strong>polinização</strong> das plantas, aumentando a produtividade das lavouras e contribuindo para a biodiversidade.
+                    </p>
+                    <ul>
+                        <li><strong>Polinização eficiente:</strong> Essencial para frutas, hortaliças e grãos.</li>
+                        <li><strong>Produtos naturais:</strong> Mel, própolis, cera, geleia real e pólen.</li>
+                        <li><strong>Sustentabilidade:</strong> Prática que preserva o meio ambiente e gera renda.</li>
+                    </ul>
+                    <p>
+                        Investir em apicultura é investir no futuro da agricultura sustentável. Conheça nossas soluções para integrar colmeias ao seu cultivo!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="about" id="sobre" aria-labelledby="titulo-sobre">
+            <header class="section-title">
+                <h2 id="titulo-sobre">Sobre a AgroTech</h2>
+            </header>
+            <p>
+                A AgroTech é uma empresa dedicada a integrar tecnologia com práticas agrícolas para melhorar a produtividade e sustentabilidade no campo. 
+                Nosso compromisso é transformar a agricultura com inovação, responsabilidade ambiental e soluções personalizadas.
+            </p>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section class="contact" id="contato" aria-labelledby="titulo-contato">
+            <header class="section-title">
+                <h2 id="titulo-contato">Contato</h2>
+            </header>
+            <p>Entre em contato conosco para saber mais sobre nossos serviços e soluções.</p>
+            <form class="contact-form" autocomplete="off">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2025 AgroTech. Todos os direitos reservados.</p>
-        <p>Desenvolvido por <a href="https://www.seusite.com">SeuNome</a></p>
+        <p>Desenvolvido por <a href="Vitor Chary" target="_blank" rel="noopener">Vitor Chary</a></p>
     </footer>
 
     <script src="script.js"></script>
